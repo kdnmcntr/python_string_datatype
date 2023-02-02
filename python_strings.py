@@ -54,10 +54,16 @@ print (firstName, lastName, "was born in", birthYear, ".", firstName, "enjoyed c
 #   - Print the following items (one per line) (print using variables)
 #       - possesive first name -birth year is- year of birth 
 #       - tab last name current year
-print (firstName + "'s birth year is " + birthYear + "\t" + lastName + " " + currentYear)
+
+print (firstName + '\'s' + " birth year is " + str(birthYear) )
+print ("\t", lastName, str(currentYear))
+
 
 # TODO String methods
 #   - Print the following items (one per line) (print using variables)
 #       - first name and last name in lower case
 #       - length of last name
 #       - first name and last name all in upper case
+print (firstName.casefold(), lastName.casefold())
+print (len(lastName))
+print (firstName.upper(), lastName.upper())
